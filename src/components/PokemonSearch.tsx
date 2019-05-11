@@ -74,7 +74,7 @@ class PokemonSearch extends Component<User, SearchState> {
 				<p>
 					User {name}{' '}{noOfPokemons && <span>has {noOfPokemons} pokemons</span>}
 				</p>
-				<input type="text" ref={this.pokemonRef} className="pa3 ba b--green bg-lightest-blue w-50 shadow-4 br3 mb4" />
+				<input type="text" ref={this.pokemonRef} />
 				<button onClick={this.onSearchClick} className="my-button" >Search</button>
 				{resultMarkup} 
 			</div>
